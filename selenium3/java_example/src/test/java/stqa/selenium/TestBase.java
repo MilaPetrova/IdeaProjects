@@ -1,6 +1,7 @@
 package stqa.selenium;
 
 import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.openqa.selenium.By;
@@ -65,19 +66,19 @@ public class TestBase{
         return driver.findElements(locator).size() > 0;
     }
 
-    @Before
-    public void Login() {
-        driver.get("http://localhost/litecart/admin/login.php");
-//                driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        driver.findElement(By.name("username")).sendKeys("admin");
-//        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-        driver.findElement(By.name("password")).sendKeys("admin");
-        driver.findElement(By.name("login")).click();
-        wait.until(titleIs("My Store"));
-    }
-//    @After
-//    public void stop() {
-//        driver.quit();
-//        driver = null;
+//    @Before
+//    public void Login() {
+//        driver.get("http://localhost/litecart/admin/login.php");
+////                driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+//        driver.findElement(By.name("username")).sendKeys("admin");
+////        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+//        driver.findElement(By.name("password")).sendKeys("admin");
+//        driver.findElement(By.name("login")).click();
+//        wait.until(titleIs("My Store"));
 //    }
+    @AfterClass
+    public static void stop() {
+        driver.quit();
+        driver = null;
+    }
 }

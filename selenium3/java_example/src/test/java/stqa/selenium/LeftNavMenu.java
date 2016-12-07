@@ -3,23 +3,18 @@ package stqa.selenium;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import static java.util.concurrent.TimeUnit.*;
-import static net.sourceforge.htmlunit.cyberneko.HTMLEntities.get;
 import static org.junit.Assert.assertTrue;
-import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
-
 import java.util.List;
-import java.util.concurrent.TimeUnit;
+
 
 /**
  * Created on 11/27/2016.
  */
 
-public class LeftNavMenu extends TestBase{
+public class LeftNavMenu extends Login{
     @Test
     public void Test1() {
+        login1();
         List<WebElement> list0 = driver.findElements(By.className("name"));
         Integer listLen = list0.size();
         for (int i = 0; i < listLen; i++) {
