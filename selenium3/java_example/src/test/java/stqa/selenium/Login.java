@@ -3,6 +3,9 @@ package stqa.selenium;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
@@ -10,6 +13,8 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
  * Created by Liudmila on 12/6/2016.
  */
 public class Login extends TestBase{
+
+
 
     public void login1() {
         driver.get("http://localhost/litecart/admin/login.php");
@@ -26,4 +31,6 @@ public class Login extends TestBase{
         driver.get("http://localhost/litecart/en/");
         wait.until(titleIs("Online Store | My Store"));
     }
+
+
 }

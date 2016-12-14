@@ -4,12 +4,12 @@ import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
-import org.openqa.selenium.By;
-import org.openqa.selenium.InvalidSelectorException;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.List;
+
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
 //@Test @Before @After @AfterClass @BeforeClass @Ignore @Runwith
@@ -76,9 +76,24 @@ public class TestBase{
 //        driver.findElement(By.name("login")).click();
 //        wait.until(titleIs("My Store"));
 //    }
-    @AfterClass
-    public static void stop() {
-        driver.quit();
-        driver = null;
+//    @AfterClass
+//    public static void stop() {
+//        driver.quit();
+//        driver = null;
+//    }
+
+    public static List<WebElement> getLeftNavList() {
+        List<WebElement> list0 = driver.findElements(By.className("name"));
+        return list0;
     }
+//    public void LeftNavItem() {
+//        List<WebElement> listtest=getLeftNavList();
+//        WebElement countriesItem = listtest.get(2);
+//        System.out.println(countriesItem.getText());
+//    }
+    public WebElement getCountries() {
+        WebElement countries = getLeftNavList().get(2);
+        return countries;
+}
+
 }

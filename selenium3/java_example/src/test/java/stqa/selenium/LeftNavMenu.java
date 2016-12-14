@@ -4,6 +4,8 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import static org.junit.Assert.assertTrue;
+
+
 import java.util.List;
 
 
@@ -11,10 +13,13 @@ import java.util.List;
  * Created on 11/27/2016.
  */
 
-public class LeftNavMenu extends Login{
+public class LeftNavMenu extends Login {
+//    private static List<WebElement> list0 = driver.findElements(By.className("name"));
+
     @Test
-    public void Test1() {
+    public void CheckLeftNavMenu() {
         login1();
+        getLeftNavList();
         List<WebElement> list0 = driver.findElements(By.className("name"));
         Integer listLen = list0.size();
         for (int i = 0; i < listLen; i++) {
@@ -31,4 +36,6 @@ public class LeftNavMenu extends Login{
 
         }
     }
+
+
 }
