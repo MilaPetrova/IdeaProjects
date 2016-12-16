@@ -62,6 +62,39 @@ public class Countries extends Login {
                 driver.findElement(By.linkText("Countries")).click();
             }
         }
+    }
 
+   
+
+    @Test
+    public void sortZones() {
+        login1();
+        getZones().click();
+        List<WebElement> idCount = driver.findElements(By.xpath("//*[@id=\"content\"]/form/table/tbody/tr/td[2]"));
+        Integer listLen1 = idCount.size();
+        System.out.println(listLen1);
+        for (int i = 0; i < listLen1; i++) {
+            List<WebElement> countriesCount = driver.findElements(By.xpath("//*[@id=\"content\"]/form/table/tbody/tr/td[3]/a"));
+            countriesCount.get(i).click();
+            List<WebElement> zonesOnZones = driver.findElements(By.xpath("//*[@id='table-zones']/tbody/tr[2]/td[3]/select/option['selected']"));
+
+            List<String> zonesText = new ArrayList<String>();
+            List<String> zonesSorted = new ArrayList<String>();
+
+            for (WebElement c : zonesOnZones) {
+                String z = c.getText();
+                zonesText.add(z);
+
+                zonesSorted.add(z);
+            }
+            zonesText.remove(0);
+            zonesSorted.remove(0);
+            Collections.sort(zonesSorted);
+            System.out.println(zonesText);
+            System.out.println(zonesSorted);
+            Assert.assertEquals(zonesText, zonesSorted);
+            driver.findElement(By.linkText("Geo Zones")).click();
+        }
     }
 }
+

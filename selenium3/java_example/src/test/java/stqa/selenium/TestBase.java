@@ -95,5 +95,8 @@ public class TestBase{
         WebElement countries = getLeftNavList().get(2);
         return countries;
 }
-
+    public WebElement getZones() {
+        WebElement countries = getLeftNavList().get(5);
+        return countries;
+    }
 }

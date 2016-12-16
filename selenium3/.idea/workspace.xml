@@ -74,9 +74,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
               <caret line="23" column="65" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -84,11 +82,13 @@
       <file leaf-file-name="Countries.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/java_example/src/test/java/stqa/selenium/Countries.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+            <state relative-caret-position="102">
+              <caret line="66" column="3" selection-start-line="66" selection-start-column="3" selection-end-line="66" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2103#2111#0" expanded="true" />
+                <element signature="e#3215#3223#0" expanded="true" />
+                <element signature="e#3279#3287#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,9 +99,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -110,7 +108,7 @@
         <entry file="file://$PROJECT_DIR$/java_example/src/test/java/stqa/selenium/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="243">
-              <caret line="82" column="7" selection-start-line="78" selection-start-column="6" selection-end-line="82" selection-end-column="7" />
+              <caret line="98" column="53" selection-start-line="98" selection-start-column="53" selection-end-line="98" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -575,33 +573,7 @@
       <recent name="stqa.selenium" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Countries.SortZones">
-    <configuration default="false" name="LeftNavMenu.MenuItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="stqa.selenium.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="java_example_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="stqa.selenium" />
-      <option name="MAIN_CLASS_NAME" value="stqa.selenium.LeftNavMenu" />
-      <option name="METHOD_NAME" value="MenuItem" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/java_example" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.Countries.sortZones">
     <configuration default="false" name="LeftNavMenu.Test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -693,6 +665,32 @@
       <option name="PACKAGE_NAME" value="stqa.selenium" />
       <option name="MAIN_CLASS_NAME" value="stqa.selenium.Countries" />
       <option name="METHOD_NAME" value="SortZones" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/java_example" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="Countries.sortZones" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="stqa.selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="java_example_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="stqa.selenium" />
+      <option name="MAIN_CLASS_NAME" value="stqa.selenium.Countries" />
+      <option name="METHOD_NAME" value="sortZones" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -951,19 +949,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.LeftNavMenu.MenuItem" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.LeftNavMenu.Test1" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.Countries.Test2" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.Countries.SortCountries" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.Countries.SortZones" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.LeftNavMenu.Test1" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Countries.Test2" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Countries.SortCountries" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Countries.SortZones" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.Countries.sortZones" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Countries.SortZones" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Countries.SortCountries" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.Countries.Test2" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.LeftNavMenu.Test1" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.LeftNavMenu.MenuItem" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Countries.sortZones" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Countries.SortZones" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Countries.SortCountries" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Countries.Test2" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.LeftNavMenu.Test1" />
       </list>
     </recent_temporary>
   </component>
@@ -981,35 +979,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Countries_SortZones - 2016.12.13 at 23h 15m 52s.xml">
-      <configuration name="Countries.SortZones" configurationId="JUnit" />
+    <history-entry file="Countries_sortZones - 2016.12.15 at 23h 09m 34s.xml">
+      <configuration name="Countries.sortZones" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Countries_SortZones - 2016.12.13 at 23h 17m 09s.xml">
-      <configuration name="Countries.SortZones" configurationId="JUnit" />
+    <history-entry file="Countries_sortZones - 2016.12.15 at 23h 11m 53s.xml">
+      <configuration name="Countries.sortZones" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Countries_SortZones - 2016.12.13 at 23h 25m 22s.xml">
-      <configuration name="Countries.SortZones" configurationId="JUnit" />
+    <history-entry file="Countries_sortZones - 2016.12.16 at 00h 03m 17s.xml">
+      <configuration name="Countries.sortZones" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Countries_SortZones - 2016.12.13 at 23h 28m 53s.xml">
-      <configuration name="Countries.SortZones" configurationId="JUnit" />
+    <history-entry file="Countries_sortZones - 2016.12.16 at 00h 14m 31s.xml">
+      <configuration name="Countries.sortZones" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Countries_SortZones - 2016.12.13 at 23h 37m 43s.xml">
-      <configuration name="Countries.SortZones" configurationId="JUnit" />
+    <history-entry file="Countries_sortZones - 2016.12.16 at 00h 17m 01s.xml">
+      <configuration name="Countries.sortZones" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Countries_SortZones - 2016.12.13 at 23h 46m 31s.xml">
-      <configuration name="Countries.SortZones" configurationId="JUnit" />
+    <history-entry file="Countries_sortZones - 2016.12.16 at 00h 19m 28s.xml">
+      <configuration name="Countries.sortZones" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Countries_SortZones - 2016.12.13 at 23h 47m 32s.xml">
-      <configuration name="Countries.SortZones" configurationId="JUnit" />
+    <history-entry file="Countries_sortZones - 2016.12.16 at 00h 20m 37s.xml">
+      <configuration name="Countries.sortZones" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Countries_SortZones - 2016.12.13 at 23h 58m 18s.xml">
-      <configuration name="Countries.SortZones" configurationId="JUnit" />
+    <history-entry file="Countries_sortZones - 2016.12.16 at 00h 22m 34s.xml">
+      <configuration name="Countries.sortZones" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Countries_SortZones - 2016.12.14 at 00h 01m 09s.xml">
-      <configuration name="Countries.SortZones" configurationId="JUnit" />
+    <history-entry file="Countries_sortZones - 2016.12.16 at 00h 25m 04s.xml">
+      <configuration name="Countries.sortZones" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Countries_SortZones - 2016.12.14 at 00h 14m 49s.xml">
-      <configuration name="Countries.SortZones" configurationId="JUnit" />
+    <history-entry file="Countries_sortZones - 2016.12.16 at 00h 27m 50s.xml">
+      <configuration name="Countries.sortZones" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -1122,9 +1120,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="23" column="65" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1135,6 +1131,8 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2103#2111#0" expanded="true" />
+            <element signature="e#3215#3223#0" expanded="true" />
+            <element signature="e#3279#3287#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1143,9 +1141,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1205,9 +1201,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1215,9 +1209,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1291,9 +1283,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="23" column="65" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1309,9 +1299,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1328,7 +1316,7 @@
     <entry file="file://$PROJECT_DIR$/java_example/src/test/java/stqa/selenium/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
-          <caret line="82" column="7" selection-start-line="78" selection-start-column="6" selection-end-line="82" selection-end-column="7" />
+          <caret line="98" column="53" selection-start-line="98" selection-start-column="53" selection-end-line="98" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1337,11 +1325,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java_example/src/test/java/stqa/selenium/Countries.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+        <state relative-caret-position="102">
+          <caret line="66" column="3" selection-start-line="66" selection-start-column="3" selection-end-line="66" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2103#2111#0" expanded="true" />
+            <element signature="e#3215#3223#0" expanded="true" />
+            <element signature="e#3279#3287#0" expanded="true" />
           </folding>
         </state>
       </provider>
