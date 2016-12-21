@@ -28,7 +28,7 @@ public class TestBase{
         driver = new ChromeDriver();
 //        if (tlDriver.get() != null) {
 //            driver = tlDriver.get();
-//            wait = new WebDriverWait(driver, 10);
+            wait = new WebDriverWait(driver, 10);
 //            return;
 //        }
 
