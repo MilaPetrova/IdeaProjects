@@ -32,5 +32,17 @@ public class Login extends TestBase{
         wait.until(titleIs("Online Store | My Store"));
     }
 
+    public void login3(String username, String password) {
+        driver.get("http://localhost/litecart/en/");
+//                driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        driver.findElement(By.name("email")).sendKeys(username);
+//        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        driver.findElement(By.name("password")).sendKeys(password);
+        driver.findElement(By.name("login")).click();
+        wait.until(titleIs("Online Store | My Store"));
+    }
 
+    public void logout() {
+        driver.findElement(By.linkText("Logout")).click();
+    }
 }
