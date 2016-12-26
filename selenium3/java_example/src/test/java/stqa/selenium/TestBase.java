@@ -76,11 +76,11 @@ public class TestBase{
 //        driver.findElement(By.name("login")).click();
 //        wait.until(titleIs("My Store"));
 //    }
-    @AfterClass
-    public static void stop() {
-        driver.quit();
-        driver = null;
-    }
+//    @AfterClass
+//    public static void stop() {
+//        driver.quit();
+//        driver = null;
+//    }
 
     public static List<WebElement> getLeftNavList() {
         List<WebElement> list0 = driver.findElements(By.className("name"));
@@ -96,7 +96,11 @@ public class TestBase{
         return countries;
 }
     public WebElement getZones() {
-        WebElement countries = getLeftNavList().get(5);
-        return countries;
+        WebElement zones = getLeftNavList().get(5);
+        return zones;
+    }
+    public WebElement getCatalog() {
+        WebElement catalog = getLeftNavList().get(1);
+        return catalog;
     }
 }
