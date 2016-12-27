@@ -6,9 +6,12 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
@@ -25,6 +28,8 @@ public class TestBase{
     @BeforeClass
     public static void start() {
         /*Chrome */
+//        DesiredCapabilities capabilities = new DesiredCapabilities();
+//        capabilities.setCapability(CapabilityType.PAGE_LOAD_STRATEGY, "eager");
         driver = new ChromeDriver();
 //        if (tlDriver.get() != null) {
 //            driver = tlDriver.get();
@@ -62,8 +67,24 @@ public class TestBase{
             return false;
         }
     }
-    public boolean areElementsPresent(By locator) {
-        return driver.findElements(locator).size() > 0;
+
+    public boolean isElementNotPresent(WebDriver driver, By locator) {
+        try {
+            driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+            return driver.findElements(locator).size() == 0;
+        }finally {
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        }
+    }
+
+    public boolean areElementsPresent(WebDriver driver, By locator) {
+        try {
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            return driver.findElements(locator).size() > 0;
+        }finally {
+            driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+        }
+//        return driver.findElements(locator).size() > 0;
     }
 
 //    @Before
